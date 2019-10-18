@@ -62,13 +62,14 @@
 <body>
     <div id="container">
         <a target="_blank" id="createRoomButton" href="https://app.kosmi.io/room/9mcdje?app=poker">
-    Click here to create a Poker room!
-    </a>
+Join room
+        </a>
     </div>
     <script>
         window.onload = function() {
             function randomizeRoomLink() {
-                document.getElementById("createRoomButton").href = "https://app.kosmi.io/room/" + Math.random().toString(36).substring(7) + "?app=poker";
+                var roomid = location.href.substring(location.href.lastIndexOf('/') + 1);
+                document.getElementById("createRoomButton").href = "https://app.kosmi.io/room/" + roomid + "?app=poker";
             }
             window.setInterval(randomizeRoomLink, 1000);
             randomizeRoomLink();
