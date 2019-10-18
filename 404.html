@@ -3,11 +3,6 @@
 
 <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
-    <link rel="icon" type="image/png" href="https://kosmi.io/assets/favicon.png" />
-    <link href="https://fonts.googleapis.com/css?family=Ranchers" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <meta name="description" content="Watch video files with your friends online using WebRTC!" />
     <title>Kosmi Poker</title>
 
     <style type="text/css">
@@ -71,7 +66,6 @@ Join room
                 var roomid = location.href.substring(location.href.lastIndexOf('/') + 1);
                 document.getElementById("createRoomButton").href = "https://app.kosmi.io/room/" + roomid + "?app=poker";
             }
-            window.setInterval(randomizeRoomLink, 1000);
             randomizeRoomLink();
         }
     </script>
