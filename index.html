@@ -124,7 +124,7 @@
                 Using WebRTC you can even communicate using webcam/microphone with members of the room and the members faces appear in their seats, making the experience feel just as if you are playing in real life!
             </li>
         </ol>
-        <a target="_blank" id="createRoomButton" href="https://app.kosmi.io/room/9mcdje?app=poker">
+        <a target="_blank" id="createRoomButton" href="https://app.kosmi.io/lobby?app=poker">
     Click here to create a Poker room!
     </a>
         <span id="poweredBy">Powered by
@@ -133,15 +133,6 @@
             href="https://kosmi.io"
             ></a></span>
     </div>
-    <script>
-        window.onload = function() {
-            function randomizeRoomLink() {
-                document.getElementById("createRoomButton").href = "https://app.kosmi.io/room/" + Math.random().toString(36).substring(7) + "?app=poker";
-            }
-            window.setInterval(randomizeRoomLink, 1000);
-            randomizeRoomLink();
-        }
-    </script>
 
 </body>
 
