@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" href="https://kosmi.io/assets/favicon.png" />
     <link href="https://fonts.googleapis.com/css?family=Ranchers" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <meta name="description" content="Create a private Poker room to play Texas Holdem with your buddies!" />
+    <meta name="description" content="Create a private Poker room to play with your friends!" />
     <title>Kosmi Poker</title>
 
     <style type="text/css">
@@ -99,32 +99,38 @@
             margin-top: 20px;
             font-size: 12px;
         }
+        video {
+            max-width: 100%;
+            margin-bottom: 20px;
+            max-height: 300px;
+        }
     </style>
 </head>
 
 <body>
     <div id="container">
         <div id="pokerLogo">Kosmi Poker</div>
-        <p id="discordLink">
-            Join us on Discord for finding players and more!:
-            <a href="https://discord.gg/ZxV5N88">
-        https://discord.gg/ZxV5N88
-    </a>
-        </p>
         <p>
-            Kosmi Poker a way to create a private Poker room to play with your buddies!
+            Create a private Poker rooms to play with your friends online with webcam!
         </p>
+        <video
+          loop="true"
+          autoplay
+          playsinline
+          muted
+          src="/poker.mp4"
+        ></video>
         This is how it works:
         <ol>
             <li>You create a room with a shareable link.</li>
             <li>
-                Share the link with your friends and play Texas Holdem together!
+                Share the link with your friends and play Texas Holdem Poker together!
             </li>
             <li>
-                Using WebRTC you can even communicate using webcam/microphone with members of the room and the members faces appear in their seats, making the experience feel just as if you are playing in real life!
+                You can even communicate using webcam/microphone with members of the room and the members faces appear in their seats, making the experience feel just as if you are playing in real life!
             </li>
         </ol>
-        <a target="_blank" id="createRoomButton" href="https://app.kosmi.io/lobby?app=poker">
+        <a target="_blank" id="createRoomButton" href="https://app.kosmi.io/createRoom?app=POKER">
     Click here to create a Poker room!
     </a>
         <span id="poweredBy">Powered by
